@@ -21,7 +21,7 @@
 
 .image {
   object-fit: cover;
-  height: 14.5rem;
+  height: 16.5rem;
 }
 
 .content {
@@ -52,7 +52,7 @@
   align-items: flex-start;
 }
 
-.origins span {
+.authors span {
   border-radius: 2rem;
   background-color: whitesmoke;
   display: inline-block;
@@ -63,11 +63,11 @@
   margin-top: 0.2rem;
 }
 
-.origins {
+.authors {
   flex: 9;
 }
 
-.cook_time {
+.publish_year {
   font-size: 0.9rem;
   flex: 3;
   text-align: right;

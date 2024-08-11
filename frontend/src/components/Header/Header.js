@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../../hooks/useCart';
-import classes from './header.module.css';
+import classes from './header.module.css';//by doing this if we have same class name they will not be affected
 import { useAuth } from '../../hooks/useAuth';
 
 export default function Header() {
@@ -13,7 +13,7 @@ export default function Header() {
     <header className={classes.header}>
       <div className={classes.container}>
         <Link to="/" className={classes.logo}>
-          Food Mine!
+          Book Store
         </Link>
         <nav>
           <ul>

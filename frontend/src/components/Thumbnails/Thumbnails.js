@@ -28,14 +28,14 @@ export default function Thumbnails({ foods }) {
                 <StarRating stars={food.stars} />
               </div>
               <div className={classes.product_item_footer}>
-                <div className={classes.origins}>
-                  {food.origins.map(origin => (
-                    <span key={origin}>{origin}</span>
+                <div className={classes.authors}>
+                  {food.authors.map(author => (
+                    <span key={author}>{author}</span>
                   ))}
                 </div>
-                <div className={classes.cook_time}>
+                <div className={classes.publish_year}>
                   <span>🕒</span>
-                  {food.cookTime}
+                  {food.publishYear}
                 </div>
               </div>
               <div className={classes.price}>

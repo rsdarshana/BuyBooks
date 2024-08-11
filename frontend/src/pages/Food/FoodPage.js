@@ -24,7 +24,7 @@ export default function FoodPage() {
   return (
     <>
       {!food ? (
-        <NotFound message="Food Not Found!" linkText="Back To Homepage" />
+        <NotFound message="Book Not Found!" linkText="Back To Homepage" />
       ) : (
         <div className={classes.container}>
           <img
@@ -48,9 +48,9 @@ export default function FoodPage() {
               <StarRating stars={food.stars} size={25} />
             </div>
 
-            <div className={classes.origins}>
-              {food.origins?.map(origin => (
-                <span key={origin}>{origin}</span>
+            <div className={classes.authors}>
+              {food.authors?.map(author => (
+                <span key={author}>{author}</span>
               ))}
             </div>
 
@@ -63,9 +63,9 @@ export default function FoodPage() {
               )}
             </div>
 
-            <div className={classes.cook_time}>
+            <div className={classes.publish_year}>
               <span>
-                Time to cook about <strong>{food.cookTime}</strong> minutes
+                publish Year <strong>{food.publishYear}</strong> 
               </span>
             </div>
 

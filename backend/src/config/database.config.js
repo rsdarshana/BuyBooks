@@ -39,7 +39,7 @@ async function seedUsers() {
 async function seedFoods() {
   const foods = await FoodModel.countDocuments();
   if (foods > 0) {
-    console.log('Foods seed is already done!');
+    console.log('Books seed is already done!');
     return;
   }
 
@@ -48,5 +48,5 @@ async function seedFoods() {
     await FoodModel.create(food);
   }
 
-  console.log('Foods seed Is Done!');
+  console.log('Books seed Is Done!');
 }
